@@ -18,17 +18,17 @@ define Package/$(PKG_NAME)/description
 	If you can't figure out what this program does, you're probably brain-dead and need immediate medical attention.
 endef
 
-# ¿½±´Ô´Âëµ½±àÒëÄ¿Â¼
+# æ‹·è´æºç åˆ°ç¼–è¯‘ç›®å½•
 define Build/Prepare
 	mkdir -p $(PKG_BUILD_DIR)
 	$(CP) ./src/* $(PKG_BUILD_DIR)
 endef
 
-# °²×°
+# å®‰è£…
 define Package/$(PKG_NAME)/install
-	# Èç¹ûÂ·ÓÉÆ÷ÉÏµÄ /binÄ¿Â¼²»´æÔÚ£¬Ôò´´½¨
+	# å¦‚æœè·¯ç”±å™¨ä¸Šçš„ /binç›®å½•ä¸å­˜åœ¨ï¼Œåˆ™åˆ›å»º
 	$(INSTALL_DIR) $(1)/bin
-	# °Ñ±àÒëºóµÄ³ÌĞò¿½±´µ½Â·ÓÉÆ÷µÄ /bin Ä¿Â¼
+	# æŠŠç¼–è¯‘åçš„ç¨‹åºæ‹·è´åˆ°è·¯ç”±å™¨çš„ /bin ç›®å½•
 	$(INSTALL_BIN) $(PKG_BUILD_DIR)/$(PKG_NAME) $(1)/bin
 endef
 
