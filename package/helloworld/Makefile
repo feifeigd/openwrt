@@ -1,4 +1,4 @@
-
+# 根目录/rules.mk
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=helloworld
