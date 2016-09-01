@@ -2,6 +2,7 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=helloworld
+# 这是版本号，必须提供
 PKG_RELEASE:=1
 
 PKG_BUILD_DIR:=$(BUILD_DIR)/$(PKG_NAME)
